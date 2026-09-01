@@ -1,0 +1,166 @@
+:root {
+    --upc-red: #B11822; /* Approximate UPC Red */
+    --upc-red-dark: #901018;
+    --upc-red-darker: #700c12;
+    --text-color: #111827;
+    --bg-light: #f9fafb;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.text-primary-upc {
+    color: var(--upc-red) !important;
+}
+
+.bg-primary-upc {
+    background-color: var(--upc-red) !important;
+}
+
+/* Custom Buttons */
+.btn-upc {
+    background-color: var(--upc-red);
+    color: white;
+    border: 2px solid var(--upc-red);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-upc:hover {
+    background-color: var(--upc-red-dark);
+    border-color: var(--upc-red-dark);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(177, 24, 34, 0.2);
+}
+
+.btn-outline-upc {
+    background-color: transparent;
+    color: var(--upc-red);
+    border: 2px solid var(--upc-red);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-upc:hover {
+    background-color: var(--upc-red);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(177, 24, 34, 0.2);
+}
+
+.tracking-wide {
+    letter-spacing: 0.1em;
+}
+
+.tracking-tight {
+    letter-spacing: -0.05em;
+}
+
+/* Hero Section */
+.hero-title {
+    line-height: 1.1;
+    font-size: 3.5rem;
+}
+
+.hero-image-wrapper img {
+    border-radius: 1.5rem;
+    object-fit: cover;
+    width: 100%;
+    max-height: 500px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Red Cards */
+.red-card {
+    background-color: var(--upc-red);
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 1.2rem;
+}
+
+.red-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(177, 24, 34, 0.3);
+}
+
+.red-card .icon-wrapper {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.red-card .text-white-50 {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Testimonials */
+.testimonial-card {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 1.2rem;
+    padding: 2rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+}
+
+.stars {
+    color: #fbbf24;
+    margin-bottom: 1rem;
+}
+
+/* Bottom CTA */
+.bottom-cta {
+    background-color: var(--upc-red-dark);
+    border-radius: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.bottom-cta-inner {
+    position: relative;
+    z-index: 2;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}

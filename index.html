@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPC-X - Compra, vende e intercambia entre upecinos</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-top border-bottom">
+        <div class="container">
+            <a class="navbar-brand fw-bolder fs-4 tracking-tight" href="#">UPC-X</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link fw-medium text-dark px-3" href="#como-funciona">¿Cómo funciona?</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium text-dark px-3" href="#caracteristicas">Características</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium text-dark px-3" href="#testimonios">Testimonios</a></li>
+                </ul>
+                <div class="d-flex gap-3 align-items-center mt-3 mt-lg-0">
+                    <a href="#" class="btn btn-upc rounded-pill px-4">Pedir demo</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center py-5 mt-4">
+        <div class="container">
+            <p class="text-primary-upc fw-bold text-uppercase tracking-wide small mb-3">PLATAFORMA EXCLUSIVA UPC</p>
+            <h1 class="fw-bolder mb-4 hero-title text-dark">Compra, vende e<br>intercambia solo entre<br>upecinos</h1>
+            <p class="lead text-secondary mb-5 mx-auto" style="max-width: 650px; font-size: 1.15rem;">
+                UPC-X es el espacio seguro donde los estudiantes de la UPC pueden encontrar libros, tecnología y más. Una comunidad basada en la confianza para todo lo que necesitas en tu vida universitaria.
+            </p>
+            <div class="d-flex justify-content-center gap-3 mb-5 flex-wrap">
+                <a href="#" class="btn btn-upc btn-lg rounded-pill px-5 shadow-sm">Empezar</a>
+                <a href="#" class="btn btn-outline-upc btn-lg rounded-pill px-5">Explorar ofertas</a>
+            </div>
+            
+            <div class="hero-image-wrapper mx-auto mt-5 px-3 px-md-0">
+                <img src="assets/images/hero-image.jpg" alt="Estudiantes en el campus de la UPC" class="img-fluid" onerror="this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80'">
+            </div>
+        </div>
+    </section>
+
+    <!-- La Solución Section -->
+    <section class="py-5 mt-5">
+        <div class="container py-5 text-center">
+            <p class="text-primary-upc fw-bold text-uppercase tracking-wide small mb-3">LA SOLUCIÓN</p>
+            <h2 class="fw-bolder mb-5 mx-auto display-6" style="max-width: 800px;">Comprar y vender entre estudiantes no debería ser un riesgo</h2>
+            
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
+                    <div class="card red-card p-4 h-100 text-start">
+                        <div class="icon-wrapper">
+                            <i class="bi bi-shield-x fs-4 text-white"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Estafas y desconocidos</h4>
+                        <p class="mb-0 text-white-50">Olvídate de perfiles falsos y encuentros inseguros. Aquí solo interactúas con personas reales de tu universidad.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card red-card p-4 h-100 text-start">
+                        <div class="icon-wrapper">
+                            <i class="bi bi-person-check fs-4 text-white"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Solo upecinos verificados</h4>
+                        <p class="mb-0 text-white-50">Todos los usuarios inician sesión con su correo institucional de la UPC. Mayor seguridad para ti.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card red-card p-4 h-100 text-start">
+                        <div class="icon-wrapper">
+                            <i class="bi bi-heart-fill fs-4 text-white"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Una comunidad de confianza</h4>
+                        <p class="mb-0 text-white-50">Las calificaciones, reportes y reseñas ayudan a mantener el ecosistema de UPC-X seguro y confiable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Características Section -->
+    <section id="caracteristicas" class="py-5 mt-4" style="background-color: #fafafa;">
+        <div class="container py-5 text-center">
+            <p class="text-primary-upc fw-bold text-uppercase tracking-wide small mb-3">NUESTRAS CARACTERÍSTICAS</p>
+            <h2 class="fw-bolder mb-5 mx-auto display-6" style="max-width: 800px;">Todo lo que necesitas para comprar y vender en tu campus</h2>
+            
+            <div class="row g-4 mt-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card red-card p-4 h-100 text-start">
+                        <div class="icon-wrapper mb-3">
+                            <i class="bi bi-person-badge fs-4 text-white"></i>
+                        </div>
+                        <h5 class="fw-bold text-white mb-2">Verificación UPC</h5>
+                        <p class="text-white-50 mb-0">Acceso exclusivo con correo institucional para tu seguridad.</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card red-card p-4 h-100 text-start">
+                        <div class="icon-wrapper mb-3">
+                            <i class="bi bi-camera fs-4 text-white"></i>
+                        </div>
+                        <h5 class="fw-bold text-white mb-2">Publica en segundos</h5>
+                        <p class="text-white-50 mb-0">Sube fotos, ponle precio y tu artículo estará listo para vender.</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card red-card p-4 h-100 text-start">
+                        <div class="icon-wrapper mb-3">
+                            <i class="bi bi-chat-dots fs-4 text-white"></i>
+                        </div>
+                        <h5 class="fw-bold text-white mb-2">Chatea con el vendedor</h5>
+                        <p class="text-white-50 mb-0">Negocia y resuelve tus dudas directamente desde la plataforma.</p>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-4">
+                    <div class="card red-card p-4 h-100 text-start">
+                        <div class="icon-wrapper mb-3">
+                            <i class="bi bi-arrow-left-right fs-4 text-white"></i>
+                        </div>
+                        <h5 class="fw-bold text-white mb-2">Intercambios</h5>
+                        <p class="text-white-50 mb-0">¿No tienes dinero? Ofrece un trueque por ese libro que necesitas.</p>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="col-md-4">
+                    <div class="card red-card p-4 h-100 text-start">
+                        <div class="icon-wrapper mb-3">
+                            <i class="bi bi-geo-alt fs-4 text-white"></i>
+                        </div>
+                        <h5 class="fw-bold text-white mb-2">Encuentros en campus</h5>
+                        <p class="text-white-50 mb-0">Coordina la entrega en los puntos seguros de tu sede UPC.</p>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="col-md-4">
+                    <div class="card red-card p-4 h-100 text-start">
+                        <div class="icon-wrapper mb-3">
+                            <i class="bi bi-shield-check fs-4 text-white"></i>
+                        </div>
+                        <h5 class="fw-bold text-white mb-2">Transacciones seguras</h5>
+                        <p class="text-white-50 mb-0">Sin pasarelas de pago externas, el trato lo definen entre ustedes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo funciona Section -->
+    <section id="como-funciona" class="py-5 mt-4">
+        <div class="container py-5 text-center">
+            <p class="text-primary-upc fw-bold text-uppercase tracking-wide small mb-3">CÓMO FUNCIONA</p>
+            <h2 class="fw-bolder mb-5 mx-auto display-6">Empezar toma menos de un minuto</h2>
+            
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
+                    <div class="card red-card p-4 h-100 text-start">
+                        <div class="icon-wrapper">
+                            <i class="bi bi-envelope-check fs-4 text-white"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">1. Verifica tu correo</h4>
+                        <p class="mb-0 text-white-50">Únete a la plataforma usando tu cuenta institucional @upc.edu.pe de manera rápida.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card red-card p-4 h-100 text-start">
+                        <div class="icon-wrapper">
+                            <i class="bi bi-search fs-4 text-white"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">2. Publica o explora</h4>
+                        <p class="mb-0 text-white-50">Busca lo que necesitas en el catálogo o sube eso que ya no usas y ponle un precio.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card red-card p-4 h-100 text-start">
+                        <div class="icon-wrapper">
+                            <i class="bi bi-handshake fs-4 text-white"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">3. Conecta y cierra el trato</h4>
+                        <p class="mb-0 text-white-50">Escribe al vendedor, negocia el precio y coordina la entrega en tu sede UPC.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios Section -->
+    <section id="testimonios" class="py-5 mt-4">
+        <div class="container py-5 text-center position-relative">
+            <p class="text-primary-upc fw-bold text-uppercase tracking-wide small mb-3">TESTIMONIOS</p>
+            <h2 class="fw-bolder mb-5 mx-auto display-6">Lo que dicen los upecinos</h2>
+            
+            <div id="testimoniosCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner pb-5">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row g-4 text-start">
+                            <div class="col-md-4">
+                                <div class="testimonial-card h-100 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <p class="text-secondary mb-4">"Vendí mis libros de ciclos pasados en menos de un día. Fue súper rápido y me sentí segura porque la entrega fue en San Miguel."</p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; font-weight: bold;">
+                                            MA
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-bold mb-0">María A.</h6>
+                                            <small class="text-muted">Estudiante de Administración</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="testimonial-card h-100 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <p class="text-secondary mb-4">"Encontré una calculadora gráfica a mitad de precio. Me encantó que pude chatear con el chico antes de comprarla."</p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="bg-primary-upc text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; font-weight: bold;">
+                                            JP
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-bold mb-0">Juan P.</h6>
+                                            <small class="text-muted">Estudiante de Ingeniería</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="testimonial-card h-100 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <p class="text-secondary mb-4">"La mejor forma de renovar mi equipo fotográfico. Cambié mi lente antiguo por otro que necesitaba de verdad."</p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="bg-dark text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; font-weight: bold;">
+                                            LC
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-bold mb-0">Lucía C.</h6>
+                                            <small class="text-muted">Estudiante de Comunicaciones</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row g-4 text-start">
+                            <div class="col-md-4">
+                                <div class="testimonial-card h-100 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <p class="text-secondary mb-4">"Compré mis materiales de arquitectura a un precio increíble. Recomiendo mucho UPC-X a todos los de mi carrera."</p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; font-weight: bold;">
+                                            DR
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-bold mb-0">Diego R.</h6>
+                                            <small class="text-muted">Estudiante de Arquitectura</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="testimonial-card h-100 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <p class="text-secondary mb-4">"Me daba miedo comprar por internet, pero saber que todos son de la misma universidad me dio mucha tranquilidad."</p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="bg-info text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; font-weight: bold;">
+                                            SF
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-bold mb-0">Sofía F.</h6>
+                                            <small class="text-muted">Estudiante de Psicología</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="testimonial-card h-100 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <p class="text-secondary mb-4">"Logré cambiar un videojuego que ya no usaba por un libro de algoritmos. ¡El trueque funciona de maravilla!"</p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; font-weight: bold;">
+                                            KM
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-bold mb-0">Kevin M.</h6>
+                                            <small class="text-muted">Estudiante de Sistemas</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <div class="d-flex justify-content-center gap-3 mt-2">
+                    <button class="btn btn-outline-dark rounded-circle" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="prev" style="width: 40px; height: 40px;">
+                        <i class="bi bi-chevron-left"></i>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="btn btn-outline-dark rounded-circle" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="next" style="width: 40px; height: 40px;">
+                        <i class="bi bi-chevron-right"></i>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 my-5">
+        <div class="container">
+            <div class="bottom-cta p-5 text-center text-white shadow-lg">
+                <div class="bottom-cta-inner py-4">
+                    <p class="fw-bold text-uppercase tracking-wide small mb-3 text-white-50">ÚNETE A UPC-X</p>
+                    <h2 class="fw-bolder mb-4 display-5">Tu campus te está esperando</h2>
+                    <p class="lead text-white-50 mx-auto mb-5" style="max-width: 600px;">
+                        Únete a miles de estudiantes que ya están comprando, vendiendo e intercambiando de forma segura.
+                    </p>
+                    <div class="d-flex justify-content-center gap-3 mb-5 flex-wrap">
+                        <a href="#" class="btn btn-light text-dark fw-bold btn-lg rounded-pill px-5 shadow-sm">Empezar</a>
+                        <a href="#" class="btn btn-outline-light btn-lg rounded-pill px-5 fw-bold">Explorar ofertas</a>
+                    </div>
+                    
+                    <div class="mt-5 mx-auto px-md-5">
+                        <img src="assets/images/cta-image.jpg" alt="Campus UPC" class="img-fluid rounded-4 shadow-lg" onerror="this.src='https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 mt-5" style="background-color: #333333; color: white;">
+        <div class="container py-4">
+            <div class="row g-4 justify-content-between">
+                <!-- Col 1 -->
+                <div class="col-lg-2">
+                    <h2 class="fw-bolder mb-3" style="font-family: serif; font-size: 2.2rem; letter-spacing: -0.05em;">UPC-X</h2>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="d-flex align-items-center justify-content-center text-white text-decoration-none" style="width: 36px; height: 36px; border-radius: 50%; background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);">
+                            <i class="bi bi-instagram fs-6"></i>
+                        </a>
+                        <a href="#" class="d-flex align-items-center justify-content-center text-white text-decoration-none" style="width: 36px; height: 36px; border-radius: 50%; background-color: #1877F2;">
+                            <i class="bi bi-facebook fs-6"></i>
+                        </a>
+                        <a href="#" class="d-flex align-items-center justify-content-center text-white text-decoration-none" style="width: 36px; height: 36px; border-radius: 50%; background-color: #000000; border: 1px solid #555;">
+                            <i class="bi bi-twitter-x fs-6"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Col 2 -->
+                <div class="col-lg-2 col-md-3">
+                    <h6 class="fw-bold mb-3">Producto</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2" style="font-size: 0.95rem;">
+                        <li><a href="#como-funciona" class="text-white-50 text-decoration-none">Como funciona</a></li>
+                        <li><a href="#caracteristicas" class="text-white-50 text-decoration-none">Características</a></li>
+                        <li><a href="#testimonios" class="text-white-50 text-decoration-none">Testimonios</a></li>
+                    </ul>
+                </div>
+                <!-- Col 3 -->
+                <div class="col-lg-2 col-md-3">
+                    <h6 class="fw-bold mb-3">Comunidad</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2" style="font-size: 0.95rem;">
+                        <li><a href="#" class="text-white-50 text-decoration-none">Sobre UPC-X</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+                <!-- Col 4 -->
+                <div class="col-lg-2 col-md-3">
+                    <h6 class="fw-bold mb-3">Legal</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2" style="font-size: 0.95rem;">
+                        <li><a href="#" class="text-white-50 text-decoration-none">Privacidad</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+                <!-- Col 5 -->
+                <div class="col-lg-3 col-md-12">
+                    <h6 class="fw-bold mb-3">¿Listo para unirte a la comunidad?</h6>
+                    <p class="text-white-50 small mb-3" style="font-size: 0.9rem;">Verifica tu correo institucional y empieza a comprar y vender hoy.</p>
+                    <a href="#" class="btn btn-light rounded-pill px-4 fw-bold py-2 text-dark">Probar demo</a>
+                </div>
+            </div>
+            
+            <hr class="mt-5 mb-4 border-secondary" style="opacity: 0.2;">
+            
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center" style="font-size: 0.9rem;">
+                <p class="mb-2 mb-md-0 fw-medium text-white">© 2026 UPC-X. Hecho por y para upecinos.</p>
+                <div class="d-flex gap-4">
+                    <a href="#" class="text-white text-decoration-underline fw-medium">Privacy Policy</a>
+                    <a href="#" class="text-white text-decoration-underline fw-medium">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
