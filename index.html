@@ -1,442 +1,346 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="es-419">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UPC-X - Compra, vende e intercambia entre upecinos</title>
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Fonts: Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UPC-X — Compra, vende e intercambia entre estudiantes UPC</title>
+  <meta name="description" content="Marketplace web y móvil para estudiantes UPC verificados que coordinan compras, ventas, servicios y tutorías dentro del campus.">
+  <meta name="keywords" content="marketplace UPC, estudiantes UPC, compra y venta en campus, avisos entre estudiantes, tutorías UPC">
+  <meta name="author" content="RichStudent">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#a6192e">
+  <link rel="canonical" href="https://upc-x.github.io/Landing-Page/">
+  <link rel="alternate" hreflang="es-419" href="https://upc-x.github.io/Landing-Page/?lang=es">
+  <link rel="alternate" hreflang="en" href="https://upc-x.github.io/Landing-Page/?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://upc-x.github.io/Landing-Page/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="UPC-X">
+  <meta property="og:locale" content="es_LA">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:url" content="https://upc-x.github.io/Landing-Page/">
+  <meta property="og:title" content="UPC-X — Compra, vende e intercambia entre estudiantes UPC">
+  <meta property="og:description" content="Marketplace web y móvil para estudiantes UPC verificados que coordinan compras, ventas, servicios y tutorías dentro del campus.">
+  <meta property="og:image" content="https://upc-x.github.io/Landing-Page/assets/images/og-image.jpg">
+  <meta property="og:image:alt" content="Portada de UPC-X: estudiantes UPC intercambiando útiles y la aplicación en un celular.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="UPC-X — Compra, vende e intercambia entre estudiantes UPC">
+  <meta name="twitter:description" content="Marketplace web y móvil para estudiantes UPC verificados que coordinan compras, ventas, servicios y tutorías dentro del campus.">
+  <meta name="twitter:image" content="https://upc-x.github.io/Landing-Page/assets/images/og-image.jpg">
+  <meta name="twitter:image:alt" content="Portada de UPC-X: estudiantes UPC intercambiando útiles y la aplicación en un celular.">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#contenido" data-i18n="skip">Saltar al contenido</a>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-top border-bottom">
-        <div class="container">
-            <a class="navbar-brand fw-bolder fs-4 tracking-tight" href="#">UPC-X</a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+  <div id="landing">
+    <header class="site-header" data-lp="LP-01" data-title="Inicio" data-name="Encabezado">
+      <nav class="nav" aria-label="Principal" data-i18n-attr="aria-label:navLabel" data-name="nav · Barra superior">
+        <div class="container nav-inner">
+          <a class="brand" href="#inicio" aria-label="UPC-X, ir al inicio" data-i18n-attr="aria-label:brandLabel" data-name="Logo UPC-X">
+            <span class="brand-mark"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4Z"/></svg></span>
+            <span class="brand-name">UPC-X</span>
+          </a>
+          <ul class="nav-links" id="nav-menu" data-name="Enlaces">
+            <li><a href="#como-funciona" data-i18n="navHow">Cómo funciona</a></li>
+            <li><a href="#caracteristicas" data-i18n="navFeatures">Características</a></li>
+            <li><a href="#testimonios" data-i18n="navTestimonials">Testimonios</a></li>
+            <li><a href="#preguntas" data-i18n="navFaq">Preguntas frecuentes</a></li>
+            <li class="nav-menu-actions"><a class="btn btn-outline" href="https://www.figma.com/proto/QGamFXN1K46XmRBrmCYpq9/UPC-X-Diseno-y-prototipos?node-id=22-7725&amp;starting-point-node-id=22%3A7143&amp;page-id=2%3A5&amp;scaling=scale-down-width" data-cta="login" data-i18n="login">Iniciar sesión</a><a class="btn btn-primary" href="https://www.figma.com/proto/QGamFXN1K46XmRBrmCYpq9/UPC-X-Diseno-y-prototipos?node-id=22-7143&amp;starting-point-node-id=22%3A7143&amp;page-id=2%3A5&amp;scaling=scale-down-width" data-cta="signup" data-i18n="signup">Crear cuenta</a></li>
+          </ul>
+          <div class="nav-actions" data-name="Acciones">
+            <div class="lang-switch" role="group" aria-label="Idioma" data-i18n-attr="aria-label:langLabel" data-name="Selector de idioma">
+              <button type="button" class="lang-option" data-lang="es" aria-pressed="true">ES</button>
+              <button type="button" class="lang-option" data-lang="en" aria-pressed="false">EN</button>
+            </div>
+            <a class="nav-login" href="https://www.figma.com/proto/QGamFXN1K46XmRBrmCYpq9/UPC-X-Diseno-y-prototipos?node-id=22-7725&amp;starting-point-node-id=22%3A7143&amp;page-id=2%3A5&amp;scaling=scale-down-width" data-cta="login" data-i18n="login">Iniciar sesión</a>
+            <a class="btn btn-primary nav-signup" href="https://www.figma.com/proto/QGamFXN1K46XmRBrmCYpq9/UPC-X-Diseno-y-prototipos?node-id=22-7143&amp;starting-point-node-id=22%3A7143&amp;page-id=2%3A5&amp;scaling=scale-down-width" data-cta="signup" data-i18n="signup" data-name="btn primary · Crear cuenta">Crear cuenta</a>
+            <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú" data-i18n-attr="aria-label:menuOpen" data-name="icon-button · Menú">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link fw-medium text-dark px-3" href="#como-funciona">¿Cómo funciona?</a></li>
-                    <li class="nav-item"><a class="nav-link fw-medium text-dark px-3" href="#caracteristicas">Características</a></li>
-                    <li class="nav-item"><a class="nav-link fw-medium text-dark px-3" href="#testimonios">Testimonios</a></li>
-                </ul>
-                <div class="d-flex gap-3 align-items-center mt-3 mt-lg-0">
-                    <a href="#" class="btn btn-upc rounded-pill px-4">Pedir demo</a>
-                </div>
-            </div>
+          </div>
         </div>
-    </nav>
+      </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section text-center py-5 mt-4">
+    </header>
+
+    <main id="contenido">
+      <section class="hero" id="inicio" aria-labelledby="hero-title" data-lp="LP-01" data-title="Inicio" data-name="Hero">
+        <div class="container hero-grid">
+          <div class="hero-copy" data-name="Propuesta de valor">
+            <p class="hero-badge" data-name="badge · Solo estudiantes UPC"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 8 4v6c0 5-8 10-8 10S4 17 4 12V6Zm-4 10 3 3 5-6"/></svg><span data-i18n="heroBadge">Solo estudiantes con correo @upc.edu.pe</span></p>
+            <h1 id="hero-title" data-i18n-html="heroTitle">Compra, vende e intercambia <em>solo entre upecinos</em></h1>
+            <p class="hero-lead" data-i18n="heroLead">Publica tus libros, calculadoras, apuntes o tutorías, conversa sobre cada aviso y acuerda la entrega en tu sede UPC. Todo en un mismo lugar.</p>
+            <div class="hero-actions" data-name="Acciones">
+              <a class="btn btn-light btn-lg" href="https://www.figma.com/proto/QGamFXN1K46XmRBrmCYpq9/UPC-X-Diseno-y-prototipos?node-id=5-325&amp;starting-point-node-id=5%3A325&amp;page-id=0%3A1&amp;scaling=scale-down" data-cta="demo" data-name="btn light · Probar demo"><span data-i18n="demo">Probar demo</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+              <a class="btn btn-ghost btn-lg" href="#como-funciona" data-i18n="seeHow" data-name="btn ghost · Ver cómo funciona">Ver cómo funciona</a>
+            </div>
+            <p class="hero-campus" data-name="Sedes"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0ZM15 10a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></svg><span data-i18n="heroCampus">Monterrico · San Miguel · San Isidro · Villa</span></p>
+          </div>
+          <div class="hero-visual" data-name="Visual del hero">
+            <img class="hero-photo" src="assets/images/hero-image.jpg" alt="Estudiantes UPC intercambian una calculadora y apuntes en una mesa del campus." data-i18n-attr="alt:heroPhotoAlt" width="1600" height="873" data-img="hero-image.jpg" data-wire="placeholder">
+            <div class="phone hero-phone" data-name="Celular · Inicio">
+              <img src="assets/images/app-home.jpg" alt="Pantalla de inicio de la app UPC-X con buscador, filtros y avisos recientes." data-i18n-attr="alt:appHomeAlt" width="540" height="1199" data-img="app-home.jpg" data-wire="placeholder">
+            </div>
+            <p class="hero-chip" data-name="badge · Correo UPC verificado"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 8 4v6c0 5-8 10-8 10S4 17 4 12V6Zm-4 10 3 3 5-6"/></svg><span data-i18n="verifiedChip">Correo UPC verificado</span></p>
+          </div>
+        </div>
+      </section>
+      <section class="section section-warm" id="problema" aria-labelledby="problem-title" data-lp="LP-02" data-title="El problema" data-name="El problema">
         <div class="container">
-            <p class="text-primary-upc fw-bold text-uppercase tracking-wide small mb-3">PLATAFORMA EXCLUSIVA UPC</p>
-            <h1 class="fw-bolder mb-4 hero-title text-dark">Compra, vende e<br>intercambia solo entre<br>upecinos</h1>
-            <p class="lead text-secondary mb-5 mx-auto" style="max-width: 650px; font-size: 1.15rem;">
-                UPC-X es el espacio seguro donde los estudiantes de la UPC pueden encontrar libros, tecnología y más. Una comunidad basada en la confianza para todo lo que necesitas en tu vida universitaria.
-            </p>
-            <div class="d-flex justify-content-center gap-3 mb-5 flex-wrap">
-                <a href="#" class="btn btn-upc btn-lg rounded-pill px-5 shadow-sm">Empezar</a>
-                <a href="#" class="btn btn-outline-upc btn-lg rounded-pill px-5">Explorar ofertas</a>
-            </div>
-            
-            <div class="hero-image-wrapper mx-auto mt-5 px-3 px-md-0">
-                <img src="assets/images/hero-image.jpg" alt="Estudiantes en el campus de la UPC" class="img-fluid" onerror="this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80'">
-            </div>
+          <div class="section-head" data-name="Encabezado">
+            <p class="eyebrow" data-i18n="problemEyebrow">El problema</p>
+            <h2 id="problem-title" data-i18n="problemTitle">Comprar y vender entre estudiantes no debería ser un riesgo</h2>
+            <p class="section-lead" data-i18n="problemLead">Hoy la compra se arma entre grupos de WhatsApp, Marketplace y Yape. Ninguna de esas herramientas sabe de tu sede ni de tu universidad.</p>
+          </div>
+          <div class="card-grid card-grid-3" data-name="Tarjetas">
+            <article class="card" data-name="Tarjeta · Avisos dispersos">
+              <span class="card-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 21l-4.4-4.4M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg></span>
+              <h3 data-i18n="problem1Title">Avisos dispersos</h3>
+              <p data-i18n="problem1Text">Libros, calculadoras y tutorías se pierden entre grupos y chats que nadie puede filtrar por sede o categoría.</p>
+            </article>
+            <article class="card" data-name="Tarjeta · Desconocidos">
+              <span class="card-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a7 7 0 0 0-14 0v2M16 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"/></svg></span>
+              <h3 data-i18n="problem2Title">Desconocidos sin verificar</h3>
+              <p data-i18n="problem2Text">En un mercado abierto no sabes si quien te responde estudia contigo o si la cuenta es real.</p>
+            </article>
+            <article class="card" data-name="Tarjeta · Tres aplicaciones">
+              <span class="card-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"/></svg></span>
+              <h3 data-i18n="problem3Title">Todo en tres aplicaciones</h3>
+              <p data-i18n="problem3Text">Buscas en un lado, conversas en otro y pagas en un tercero. El acuerdo no queda registrado en ningún lugar.</p>
+            </article>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- La Solución Section -->
-    <section class="py-5 mt-5">
-        <div class="container py-5 text-center">
-            <p class="text-primary-upc fw-bold text-uppercase tracking-wide small mb-3">LA SOLUCIÓN</p>
-            <h2 class="fw-bolder mb-5 mx-auto display-6" style="max-width: 800px;">Comprar y vender entre estudiantes no debería ser un riesgo</h2>
-            
-            <div class="row g-4 mt-4">
-                <div class="col-md-4">
-                    <div class="card red-card p-4 h-100 text-start">
-                        <div class="icon-wrapper">
-                            <i class="bi bi-shield-x fs-4 text-white"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3">Estafas y desconocidos</h4>
-                        <p class="mb-0 text-white-50">Olvídate de perfiles falsos y encuentros inseguros. Aquí solo interactúas con personas reales de tu universidad.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card red-card p-4 h-100 text-start">
-                        <div class="icon-wrapper">
-                            <i class="bi bi-person-check fs-4 text-white"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3">Solo upecinos verificados</h4>
-                        <p class="mb-0 text-white-50">Todos los usuarios inician sesión con su correo institucional de la UPC. Mayor seguridad para ti.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card red-card p-4 h-100 text-start">
-                        <div class="icon-wrapper">
-                            <i class="bi bi-heart-fill fs-4 text-white"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3">Una comunidad de confianza</h4>
-                        <p class="mb-0 text-white-50">Las calificaciones, reportes y reseñas ayudan a mantener el ecosistema de UPC-X seguro y confiable.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Características Section -->
-    <section id="caracteristicas" class="py-5 mt-4" style="background-color: #fafafa;">
-        <div class="container py-5 text-center">
-            <p class="text-primary-upc fw-bold text-uppercase tracking-wide small mb-3">NUESTRAS CARACTERÍSTICAS</p>
-            <h2 class="fw-bolder mb-5 mx-auto display-6" style="max-width: 800px;">Todo lo que necesitas para comprar y vender en tu campus</h2>
-            
-            <div class="row g-4 mt-4">
-                <!-- Card 1 -->
-                <div class="col-md-4">
-                    <div class="card red-card p-4 h-100 text-start">
-                        <div class="icon-wrapper mb-3">
-                            <i class="bi bi-person-badge fs-4 text-white"></i>
-                        </div>
-                        <h5 class="fw-bold text-white mb-2">Verificación UPC</h5>
-                        <p class="text-white-50 mb-0">Acceso exclusivo con correo institucional para tu seguridad.</p>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="col-md-4">
-                    <div class="card red-card p-4 h-100 text-start">
-                        <div class="icon-wrapper mb-3">
-                            <i class="bi bi-camera fs-4 text-white"></i>
-                        </div>
-                        <h5 class="fw-bold text-white mb-2">Publica en segundos</h5>
-                        <p class="text-white-50 mb-0">Sube fotos, ponle precio y tu artículo estará listo para vender.</p>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="col-md-4">
-                    <div class="card red-card p-4 h-100 text-start">
-                        <div class="icon-wrapper mb-3">
-                            <i class="bi bi-chat-dots fs-4 text-white"></i>
-                        </div>
-                        <h5 class="fw-bold text-white mb-2">Chatea con el vendedor</h5>
-                        <p class="text-white-50 mb-0">Negocia y resuelve tus dudas directamente desde la plataforma.</p>
-                    </div>
-                </div>
-                <!-- Card 4 -->
-                <div class="col-md-4">
-                    <div class="card red-card p-4 h-100 text-start">
-                        <div class="icon-wrapper mb-3">
-                            <i class="bi bi-arrow-left-right fs-4 text-white"></i>
-                        </div>
-                        <h5 class="fw-bold text-white mb-2">Intercambios</h5>
-                        <p class="text-white-50 mb-0">¿No tienes dinero? Ofrece un trueque por ese libro que necesitas.</p>
-                    </div>
-                </div>
-                <!-- Card 5 -->
-                <div class="col-md-4">
-                    <div class="card red-card p-4 h-100 text-start">
-                        <div class="icon-wrapper mb-3">
-                            <i class="bi bi-geo-alt fs-4 text-white"></i>
-                        </div>
-                        <h5 class="fw-bold text-white mb-2">Encuentros en campus</h5>
-                        <p class="text-white-50 mb-0">Coordina la entrega en los puntos seguros de tu sede UPC.</p>
-                    </div>
-                </div>
-                <!-- Card 6 -->
-                <div class="col-md-4">
-                    <div class="card red-card p-4 h-100 text-start">
-                        <div class="icon-wrapper mb-3">
-                            <i class="bi bi-shield-check fs-4 text-white"></i>
-                        </div>
-                        <h5 class="fw-bold text-white mb-2">Transacciones seguras</h5>
-                        <p class="text-white-50 mb-0">Sin pasarelas de pago externas, el trato lo definen entre ustedes.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Cómo funciona Section -->
-    <section id="como-funciona" class="py-5 mt-4">
-        <div class="container py-5 text-center">
-            <p class="text-primary-upc fw-bold text-uppercase tracking-wide small mb-3">CÓMO FUNCIONA</p>
-            <h2 class="fw-bolder mb-5 mx-auto display-6">Empezar toma menos de un minuto</h2>
-            
-            <div class="row g-4 mt-4">
-                <div class="col-md-4">
-                    <div class="card red-card p-4 h-100 text-start">
-                        <div class="icon-wrapper">
-                            <i class="bi bi-envelope-check fs-4 text-white"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3">1. Verifica tu correo</h4>
-                        <p class="mb-0 text-white-50">Únete a la plataforma usando tu cuenta institucional @upc.edu.pe de manera rápida.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card red-card p-4 h-100 text-start">
-                        <div class="icon-wrapper">
-                            <i class="bi bi-search fs-4 text-white"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3">2. Publica o explora</h4>
-                        <p class="mb-0 text-white-50">Busca lo que necesitas en el catálogo o sube eso que ya no usas y ponle un precio.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card red-card p-4 h-100 text-start">
-                        <div class="icon-wrapper">
-                            <i class="bi bi-handshake fs-4 text-white"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3">3. Conecta y cierra el trato</h4>
-                        <p class="mb-0 text-white-50">Escribe al vendedor, negocia el precio y coordina la entrega en tu sede UPC.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonios Section -->
-    <section id="testimonios" class="py-5 mt-4">
-        <div class="container py-5 text-center position-relative">
-            <p class="text-primary-upc fw-bold text-uppercase tracking-wide small mb-3">TESTIMONIOS</p>
-            <h2 class="fw-bolder mb-5 mx-auto display-6">Lo que dicen los upecinos</h2>
-            
-            <div id="testimoniosCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner pb-5">
-                    <!-- Slide 1 -->
-                    <div class="carousel-item active">
-                        <div class="row g-4 text-start">
-                            <div class="col-md-4">
-                                <div class="testimonial-card h-100 d-flex flex-column justify-content-between">
-                                    <div>
-                                        <div class="stars">
-                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                                        </div>
-                                        <p class="text-secondary mb-4">"Vendí mis libros de ciclos pasados en menos de un día. Fue súper rápido y me sentí segura porque la entrega fue en San Miguel."</p>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <div class="bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; font-weight: bold;">
-                                            MA
-                                        </div>
-                                        <div>
-                                            <h6 class="fw-bold mb-0">María A.</h6>
-                                            <small class="text-muted">Estudiante de Administración</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="testimonial-card h-100 d-flex flex-column justify-content-between">
-                                    <div>
-                                        <div class="stars">
-                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                                        </div>
-                                        <p class="text-secondary mb-4">"Encontré una calculadora gráfica a mitad de precio. Me encantó que pude chatear con el chico antes de comprarla."</p>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <div class="bg-primary-upc text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; font-weight: bold;">
-                                            JP
-                                        </div>
-                                        <div>
-                                            <h6 class="fw-bold mb-0">Juan P.</h6>
-                                            <small class="text-muted">Estudiante de Ingeniería</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="testimonial-card h-100 d-flex flex-column justify-content-between">
-                                    <div>
-                                        <div class="stars">
-                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                                        </div>
-                                        <p class="text-secondary mb-4">"La mejor forma de renovar mi equipo fotográfico. Cambié mi lente antiguo por otro que necesitaba de verdad."</p>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <div class="bg-dark text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; font-weight: bold;">
-                                            LC
-                                        </div>
-                                        <div>
-                                            <h6 class="fw-bold mb-0">Lucía C.</h6>
-                                            <small class="text-muted">Estudiante de Comunicaciones</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="carousel-item">
-                        <div class="row g-4 text-start">
-                            <div class="col-md-4">
-                                <div class="testimonial-card h-100 d-flex flex-column justify-content-between">
-                                    <div>
-                                        <div class="stars">
-                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                                        </div>
-                                        <p class="text-secondary mb-4">"Compré mis materiales de arquitectura a un precio increíble. Recomiendo mucho UPC-X a todos los de mi carrera."</p>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; font-weight: bold;">
-                                            DR
-                                        </div>
-                                        <div>
-                                            <h6 class="fw-bold mb-0">Diego R.</h6>
-                                            <small class="text-muted">Estudiante de Arquitectura</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="testimonial-card h-100 d-flex flex-column justify-content-between">
-                                    <div>
-                                        <div class="stars">
-                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                                        </div>
-                                        <p class="text-secondary mb-4">"Me daba miedo comprar por internet, pero saber que todos son de la misma universidad me dio mucha tranquilidad."</p>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <div class="bg-info text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; font-weight: bold;">
-                                            SF
-                                        </div>
-                                        <div>
-                                            <h6 class="fw-bold mb-0">Sofía F.</h6>
-                                            <small class="text-muted">Estudiante de Psicología</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="testimonial-card h-100 d-flex flex-column justify-content-between">
-                                    <div>
-                                        <div class="stars">
-                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                                        </div>
-                                        <p class="text-secondary mb-4">"Logré cambiar un videojuego que ya no usaba por un libro de algoritmos. ¡El trueque funciona de maravilla!"</p>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; font-weight: bold;">
-                                            KM
-                                        </div>
-                                        <div>
-                                            <h6 class="fw-bold mb-0">Kevin M.</h6>
-                                            <small class="text-muted">Estudiante de Sistemas</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Controls -->
-                <div class="d-flex justify-content-center gap-3 mt-2">
-                    <button class="btn btn-outline-dark rounded-circle" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="prev" style="width: 40px; height: 40px;">
-                        <i class="bi bi-chevron-left"></i>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="btn btn-outline-dark rounded-circle" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="next" style="width: 40px; height: 40px;">
-                        <i class="bi bi-chevron-right"></i>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-5 my-5">
+      <section class="section" id="caracteristicas" aria-labelledby="features-title" data-lp="LP-03" data-title="Características" data-name="Características">
         <div class="container">
-            <div class="bottom-cta p-5 text-center text-white shadow-lg">
-                <div class="bottom-cta-inner py-4">
-                    <p class="fw-bold text-uppercase tracking-wide small mb-3 text-white-50">ÚNETE A UPC-X</p>
-                    <h2 class="fw-bolder mb-4 display-5">Tu campus te está esperando</h2>
-                    <p class="lead text-white-50 mx-auto mb-5" style="max-width: 600px;">
-                        Únete a miles de estudiantes que ya están comprando, vendiendo e intercambiando de forma segura.
-                    </p>
-                    <div class="d-flex justify-content-center gap-3 mb-5 flex-wrap">
-                        <a href="#" class="btn btn-light text-dark fw-bold btn-lg rounded-pill px-5 shadow-sm">Empezar</a>
-                        <a href="#" class="btn btn-outline-light btn-lg rounded-pill px-5 fw-bold">Explorar ofertas</a>
-                    </div>
-                    
-                    <div class="mt-5 mx-auto px-md-5">
-                        <img src="assets/images/cta-image.jpg" alt="Campus UPC" class="img-fluid rounded-4 shadow-lg" onerror="this.src='https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80'">
-                    </div>
-                </div>
-            </div>
+          <div class="section-head" data-name="Encabezado">
+            <p class="eyebrow" data-i18n="featuresEyebrow">Características</p>
+            <h2 id="features-title" data-i18n="featuresTitle">Todo lo que necesitas para comprar y vender en tu campus</h2>
+            <p class="section-lead" data-i18n="featuresLead">Una sola cuenta sirve para comprar y para publicar. Tu rol depende del aviso, no del tipo de usuario.</p>
+          </div>
+          <div class="card-grid card-grid-3" data-name="Tarjetas">
+            <article class="card card-soft" data-name="Tarjeta · Correo verificado">
+              <span class="card-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 8 4v6c0 5-8 10-8 10S4 17 4 12V6Zm-4 10 3 3 5-6"/></svg></span>
+              <h3 data-i18n="feature1Title">Correo UPC verificado</h3>
+              <p data-i18n="feature1Text">Solo ingresan cuentas @upc.edu.pe, confirmadas con un código de seis dígitos. No pedimos DNI ni otros documentos.</p>
+            </article>
+            <article class="card card-soft" data-name="Tarjeta · Publicar">
+              <span class="card-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
+              <h3 data-i18n="feature2Title">Publica en dos pasos</h3>
+              <p data-i18n="feature2Text">Completa los datos, sube tus fotos y revisa la previsualización antes de publicar tu aviso.</p>
+            </article>
+            <article class="card card-soft" data-name="Tarjeta · Buscar">
+              <span class="card-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 17h16M9 4v6M16 14v6"/></svg></span>
+              <h3 data-i18n="feature3Title">Busca por sede y categoría</h3>
+              <p data-i18n="feature3Text">Filtra por campus, categoría, tipo, condición y precio. Encuentra productos, servicios y tutorías.</p>
+            </article>
+            <article class="card card-soft" data-name="Tarjeta · Chat">
+              <span class="card-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"/></svg></span>
+              <h3 data-i18n="feature4Title">Chat ligado al aviso</h3>
+              <p data-i18n="feature4Text">Cada conversación conserva el aviso, el precio y a las dos personas que participan.</p>
+            </article>
+            <article class="card card-soft" data-name="Tarjeta · Encuentro">
+              <span class="card-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0ZM15 10a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></svg></span>
+              <h3 data-i18n="feature5Title">Entrega en tu sede</h3>
+              <p data-i18n="feature5Text">Propón punto, fecha y hora dentro del campus. El acuerdo vale cuando ambas partes lo aceptan.</p>
+            </article>
+            <article class="card card-soft" data-name="Tarjeta · Reputación">
+              <span class="card-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.1 6.3L22 9.3l-5 4.9 1.2 6.9-6.2-3.3-6.2 3.3 1.2-6.9-5-4.9 6.9-1Z"/></svg></span>
+              <h3 data-i18n="feature6Title">Reputación tras cada entrega</h3>
+              <p data-i18n="feature6Text">Cuando ambos confirman la entrega, cada estudiante puede dejar una reseña a la otra persona.</p>
+            </article>
+          </div>
+          <p class="notice" data-name="notice · Pagos fuera de UPC-X"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0ZM12 11v6m0-10v1"/></svg><span data-i18n="paymentNotice">El pago se acuerda fuera de UPC-X, con Yape, Plin o efectivo. La app solo guarda la constancia que decidas compartir en el chat.</span></p>
         </div>
-    </section>
+      </section>
 
-    <!-- Footer -->
-    <footer class="py-5 mt-5" style="background-color: #333333; color: white;">
-        <div class="container py-4">
-            <div class="row g-4 justify-content-between">
-                <!-- Col 1 -->
-                <div class="col-lg-2">
-                    <h2 class="fw-bolder mb-3" style="font-family: serif; font-size: 2.2rem; letter-spacing: -0.05em;">UPC-X</h2>
-                    <div class="d-flex gap-2">
-                        <a href="#" class="d-flex align-items-center justify-content-center text-white text-decoration-none" style="width: 36px; height: 36px; border-radius: 50%; background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);">
-                            <i class="bi bi-instagram fs-6"></i>
-                        </a>
-                        <a href="#" class="d-flex align-items-center justify-content-center text-white text-decoration-none" style="width: 36px; height: 36px; border-radius: 50%; background-color: #1877F2;">
-                            <i class="bi bi-facebook fs-6"></i>
-                        </a>
-                        <a href="#" class="d-flex align-items-center justify-content-center text-white text-decoration-none" style="width: 36px; height: 36px; border-radius: 50%; background-color: #000000; border: 1px solid #555;">
-                            <i class="bi bi-twitter-x fs-6"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- Col 2 -->
-                <div class="col-lg-2 col-md-3">
-                    <h6 class="fw-bold mb-3">Producto</h6>
-                    <ul class="list-unstyled d-flex flex-column gap-2" style="font-size: 0.95rem;">
-                        <li><a href="#como-funciona" class="text-white-50 text-decoration-none">Como funciona</a></li>
-                        <li><a href="#caracteristicas" class="text-white-50 text-decoration-none">Características</a></li>
-                        <li><a href="#testimonios" class="text-white-50 text-decoration-none">Testimonios</a></li>
-                    </ul>
-                </div>
-                <!-- Col 3 -->
-                <div class="col-lg-2 col-md-3">
-                    <h6 class="fw-bold mb-3">Comunidad</h6>
-                    <ul class="list-unstyled d-flex flex-column gap-2" style="font-size: 0.95rem;">
-                        <li><a href="#" class="text-white-50 text-decoration-none">Sobre UPC-X</a></li>
-                        <li><a href="#" class="text-white-50 text-decoration-none">Preguntas Frecuentes</a></li>
-                    </ul>
-                </div>
-                <!-- Col 4 -->
-                <div class="col-lg-2 col-md-3">
-                    <h6 class="fw-bold mb-3">Legal</h6>
-                    <ul class="list-unstyled d-flex flex-column gap-2" style="font-size: 0.95rem;">
-                        <li><a href="#" class="text-white-50 text-decoration-none">Privacidad</a></li>
-                        <li><a href="#" class="text-white-50 text-decoration-none">Términos y condiciones</a></li>
-                    </ul>
-                </div>
-                <!-- Col 5 -->
-                <div class="col-lg-3 col-md-12">
-                    <h6 class="fw-bold mb-3">¿Listo para unirte a la comunidad?</h6>
-                    <p class="text-white-50 small mb-3" style="font-size: 0.9rem;">Verifica tu correo institucional y empieza a comprar y vender hoy.</p>
-                    <a href="#" class="btn btn-light rounded-pill px-4 fw-bold py-2 text-dark">Probar demo</a>
-                </div>
-            </div>
-            
-            <hr class="mt-5 mb-4 border-secondary" style="opacity: 0.2;">
-            
-            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center" style="font-size: 0.9rem;">
-                <p class="mb-2 mb-md-0 fw-medium text-white">© 2026 UPC-X. Hecho por y para upecinos.</p>
-                <div class="d-flex gap-4">
-                    <a href="#" class="text-white text-decoration-underline fw-medium">Privacy Policy</a>
-                    <a href="#" class="text-white text-decoration-underline fw-medium">Terms of Service</a>
-                </div>
-            </div>
+      <section class="section section-warm" id="como-funciona" aria-labelledby="how-title" data-lp="LP-04" data-title="Cómo funciona" data-name="Cómo funciona">
+        <div class="container">
+          <div class="section-head" data-name="Encabezado">
+            <p class="eyebrow" data-i18n="howEyebrow">Cómo funciona</p>
+            <h2 id="how-title" data-i18n="howTitle">Empieza en tres pasos</h2>
+            <p class="section-lead" data-i18n="howLead">Verifica tu cuenta, encuentra o publica un aviso y cierra el trato en tu sede.</p>
+          </div>
+          <ol class="steps" data-name="Pasos">
+            <li class="step" data-name="Paso 1 · Verifica">
+              <div class="step-copy" data-name="Texto">
+                <span class="step-number" aria-hidden="true">1</span>
+                <h3 data-i18n="step1Title">Verifica tu correo UPC</h3>
+                <p data-i18n="step1Text">Ingresa tu correo @upc.edu.pe y escribe el código de seis dígitos que te enviamos.</p>
+              </div>
+              <div class="step-shot" data-name="Captura">
+                <div class="phone" data-name="Celular · Verificación"><img src="assets/images/app-verification.jpg" alt="Pantalla de verificación con el código de seis dígitos." data-i18n-attr="alt:appVerifyAlt" width="540" height="1199" loading="lazy" data-img="app-verification.jpg" data-wire="placeholder"></div>
+              </div>
+            </li>
+            <li class="step" data-name="Paso 2 · Publica o explora">
+              <div class="step-copy" data-name="Texto">
+                <span class="step-number" aria-hidden="true">2</span>
+                <h3 data-i18n="step2Title">Publica o explora</h3>
+                <p data-i18n="step2Text">Busca lo que necesitas por sede y categoría, o publica lo que ya no usas con fotos y precio.</p>
+              </div>
+              <div class="step-shot" data-name="Captura">
+                <div class="phone" data-name="Celular · Publicar"><img src="assets/images/app-publish.jpg" alt="Formulario para publicar un aviso con tipo, título, precio y categoría." data-i18n-attr="alt:appPublishAlt" width="540" height="1199" loading="lazy" data-img="app-publish.jpg" data-wire="placeholder"></div>
+              </div>
+            </li>
+            <li class="step" data-name="Paso 3 · Acuerda">
+              <div class="step-copy" data-name="Texto">
+                <span class="step-number" aria-hidden="true">3</span>
+                <h3 data-i18n="step3Title">Conversa y acuerda la entrega</h3>
+                <p data-i18n="step3Text">Escribe desde el aviso, acuerden punto y hora en el campus y confirmen la entrega.</p>
+              </div>
+              <div class="step-shot" data-name="Captura">
+                <div class="phone" data-name="Celular · Chat"><img src="assets/images/app-chat.jpg" alt="Conversación sobre una calculadora con la propuesta de encuentro." data-i18n-attr="alt:appChatAlt" width="540" height="1199" loading="lazy" data-img="app-chat.jpg" data-wire="placeholder"></div>
+              </div>
+            </li>
+          </ol>
         </div>
+      </section>
+
+      <section class="section" id="testimonios" aria-labelledby="testimonials-title" data-lp="LP-05" data-title="Testimonios" data-name="Testimonios">
+        <div class="container">
+          <div class="section-head" data-name="Encabezado">
+            <p class="eyebrow" data-i18n="testimonialsEyebrow">Testimonios</p>
+            <h2 id="testimonials-title" data-i18n="testimonialsTitle">Lo que dicen los upecinos</h2>
+            <p class="section-lead" data-i18n="testimonialsLead">Estudiantes que compran y venden entre compañeros de su sede.</p>
+          </div>
+          <div class="card-grid card-grid-3" data-name="Tarjetas">
+            <figure class="quote" data-name="Testimonio · Valeria">
+              <div class="stars" role="img" aria-label="5 de 5 estrellas" data-i18n-attr="aria-label:stars" data-name="Calificación · 5 estrellas"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.1 6.3L22 9.3l-5 4.9 1.2 6.9-6.2-3.3-6.2 3.3 1.2-6.9-5-4.9 6.9-1Z"/></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.1 6.3L22 9.3l-5 4.9 1.2 6.9-6.2-3.3-6.2 3.3 1.2-6.9-5-4.9 6.9-1Z"/></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.1 6.3L22 9.3l-5 4.9 1.2 6.9-6.2-3.3-6.2 3.3 1.2-6.9-5-4.9 6.9-1Z"/></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.1 6.3L22 9.3l-5 4.9 1.2 6.9-6.2-3.3-6.2 3.3 1.2-6.9-5-4.9 6.9-1Z"/></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.1 6.3L22 9.3l-5 4.9 1.2 6.9-6.2-3.3-6.2 3.3 1.2-6.9-5-4.9 6.9-1Z"/></svg></div>
+              <blockquote data-i18n="quote1">“Vendí mis libros del ciclo pasado en un día. Coordinamos la entrega en la biblioteca de San Miguel y todo quedó en el chat.”</blockquote>
+              <figcaption class="person" data-name="Autora"><span class="avatar" aria-hidden="true">VR</span><span><strong>Valeria R.</strong><span data-i18n="quote1Role">Administración · San Miguel</span></span></figcaption>
+            </figure>
+            <figure class="quote" data-name="Testimonio · Diego">
+              <div class="stars" role="img" aria-label="5 de 5 estrellas" data-i18n-attr="aria-label:stars" data-name="Calificación · 5 estrellas"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.1 6.3L22 9.3l-5 4.9 1.2 6.9-6.2-3.3-6.2 3.3 1.2-6.9-5-4.9 6.9-1Z"/></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.1 6.3L22 9.3l-5 4.9 1.2 6.9-6.2-3.3-6.2 3.3 1.2-6.9-5-4.9 6.9-1Z"/></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.1 6.3L22 9.3l-5 4.9 1.2 6.9-6.2-3.3-6.2 3.3 1.2-6.9-5-4.9 6.9-1Z"/></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.1 6.3L22 9.3l-5 4.9 1.2 6.9-6.2-3.3-6.2 3.3 1.2-6.9-5-4.9 6.9-1Z"/></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.1 6.3L22 9.3l-5 4.9 1.2 6.9-6.2-3.3-6.2 3.3 1.2-6.9-5-4.9 6.9-1Z"/></svg></div>
+              <blockquote data-i18n="quote2">“Encontré una calculadora científica a buen precio en Monterrico. Pude ver la reputación del vendedor antes de escribirle.”</blockquote>
+              <figcaption class="person" data-name="Autor"><span class="avatar" aria-hidden="true">DM</span><span><strong>Diego M.</strong><span data-i18n="quote2Role">Ingeniería · Monterrico</span></span></figcaption>
+            </figure>
+            <figure class="quote" data-name="Testimonio · Camila">
+              <div class="stars" role="img" aria-label="5 de 5 estrellas" data-i18n-attr="aria-label:stars" data-name="Calificación · 5 estrellas"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.1 6.3L22 9.3l-5 4.9 1.2 6.9-6.2-3.3-6.2 3.3 1.2-6.9-5-4.9 6.9-1Z"/></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.1 6.3L22 9.3l-5 4.9 1.2 6.9-6.2-3.3-6.2 3.3 1.2-6.9-5-4.9 6.9-1Z"/></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.1 6.3L22 9.3l-5 4.9 1.2 6.9-6.2-3.3-6.2 3.3 1.2-6.9-5-4.9 6.9-1Z"/></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.1 6.3L22 9.3l-5 4.9 1.2 6.9-6.2-3.3-6.2 3.3 1.2-6.9-5-4.9 6.9-1Z"/></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.1 6.3L22 9.3l-5 4.9 1.2 6.9-6.2-3.3-6.2 3.3 1.2-6.9-5-4.9 6.9-1Z"/></svg></div>
+              <blockquote data-i18n="quote3">“Doy tutorías de Cálculo y ahora las publico en un solo lugar. Me escriben estudiantes de mi misma sede.”</blockquote>
+              <figcaption class="person" data-name="Autora"><span class="avatar" aria-hidden="true">CR</span><span><strong>Camila R.</strong><span data-i18n="quote3Role">Economía · San Isidro</span></span></figcaption>
+            </figure>
+          </div>
+          <p class="footnote" data-i18n="testimonialsNote">Testimonios ilustrativos de la etapa de validación.</p>
+        </div>
+      </section>
+
+      <section class="section section-warm" id="preguntas" aria-labelledby="faq-title" data-lp="LP-06" data-title="Preguntas frecuentes y contacto" data-name="Preguntas frecuentes y contacto">
+        <div class="container faq-grid">
+          <div class="faq" data-name="Preguntas frecuentes">
+            <div class="section-head section-head-left" data-name="Encabezado">
+              <p class="eyebrow" data-i18n="faqEyebrow">Preguntas frecuentes</p>
+              <h2 id="faq-title" data-i18n="faqTitle">Resolvemos tus dudas</h2>
+            </div>
+            <div class="faq-list" data-name="Lista">
+              <details class="faq-item" open data-name="Pregunta · Quién">
+                <summary><span data-i18n="faq1Q">¿Quién puede usar UPC-X?</span><svg class="icon faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                <p data-i18n="faq1A">Cualquier estudiante con correo @upc.edu.pe activo. Lo verificamos con un código de seis dígitos; no pedimos DNI ni otros documentos.</p>
+              </details>
+              <details class="faq-item" data-name="Pregunta · Entregas">
+                <summary><span data-i18n="faq2Q">¿Dónde se realizan las entregas?</span><svg class="icon faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                <p data-i18n="faq2A">En una sede UPC de Lima: Monterrico, San Miguel, San Isidro o Villa. Desde el chat se propone punto, fecha y hora, y ambas partes deben aceptar. Recomendamos lugares concurridos del campus.</p>
+              </details>
+              <details class="faq-item" data-name="Pregunta · Pagos">
+                <summary><span data-i18n="faq3Q">¿Cómo se paga?</span><svg class="icon faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                <p data-i18n="faq3A">Fuera de UPC-X, con billeteras digitales como Yape o Plin, o en efectivo al entregar. UPC-X no procesa pagos: solo registra la constancia que compartas en la conversación.</p>
+              </details>
+              <details class="faq-item" data-name="Pregunta · Costo">
+                <summary><span data-i18n="faq4Q">¿Cuánto cuesta publicar?</span><svg class="icon faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                <p data-i18n="faq4A">Durante el piloto, publicar avisos y contactar a otros estudiantes no tiene costo.</p>
+              </details>
+              <details class="faq-item" data-name="Pregunta · Problemas">
+                <summary><span data-i18n="faq5Q">¿Qué pasa si algo sale mal?</span><svg class="icon faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                <p data-i18n="faq5A">Puedes cancelar el acuerdo antes de la entrega y reportar un aviso o una conversación. Las reseñas solo se habilitan cuando ambas partes confirman la entrega.</p>
+              </details>
+            </div>
+          </div>
+          <div class="contact-card" id="contacto" data-name="Contacto">
+            <h3 data-i18n="contactTitle">¿Tienes otra consulta?</h3>
+            <p data-i18n="contactLead">Escríbenos y el equipo de RichStudent te responderá a tu correo.</p>
+            <form class="contact-form" novalidate data-name="Formulario">
+              <div class="field" data-name="field · Correo">
+                <label for="contact-email" data-i18n="contactEmail">Correo electrónico</label>
+                <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="u202600001@upc.edu.pe" aria-describedby="contact-email-error">
+                <p class="field-error" id="contact-email-error" hidden></p>
+              </div>
+              <div class="field" data-name="field · Mensaje">
+                <label for="contact-message" data-i18n="contactMessage">Mensaje</label>
+                <textarea id="contact-message" name="message" rows="4" placeholder="Cuéntanos tu duda" data-i18n-attr="placeholder:contactMessagePlaceholder" aria-describedby="contact-message-error"></textarea>
+                <p class="field-error" id="contact-message-error" hidden></p>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block" data-name="btn primary · Enviar consulta"><span data-i18n="contactSubmit">Enviar consulta</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m22 2-7 20-4-9L2 9Zm0 0L11 13"/></svg></button>
+              <p class="form-status" role="status" aria-live="polite" hidden></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-cta" aria-labelledby="cta-title" data-lp="LP-07" data-title="Llamado a la acción" data-name="Llamado a la acción">
+        <div class="container">
+          <div class="cta-card" data-name="Tarjeta CTA">
+            <div class="cta-copy" data-name="Texto">
+              <p class="eyebrow eyebrow-light" data-i18n="ctaEyebrow">Únete a UPC-X</p>
+              <h2 id="cta-title" data-i18n="ctaTitle">Tu campus te está esperando</h2>
+              <p class="cta-lead" data-i18n="ctaLead">Entra con tu correo @upc.edu.pe y publica tu primer aviso hoy.</p>
+              <div class="hero-actions" data-name="Acciones">
+                <a class="btn btn-light btn-lg" href="https://www.figma.com/proto/QGamFXN1K46XmRBrmCYpq9/UPC-X-Diseno-y-prototipos?node-id=22-7143&amp;starting-point-node-id=22%3A7143&amp;page-id=2%3A5&amp;scaling=scale-down-width" data-cta="signup" data-i18n="signup" data-name="btn light · Crear cuenta">Crear cuenta</a>
+                <a class="btn btn-ghost btn-lg" href="https://www.figma.com/proto/QGamFXN1K46XmRBrmCYpq9/UPC-X-Diseno-y-prototipos?node-id=5-325&amp;starting-point-node-id=5%3A325&amp;page-id=0%3A1&amp;scaling=scale-down" data-cta="demo" data-i18n="demo" data-name="btn ghost · Probar demo">Probar demo</a>
+              </div>
+            </div>
+            <div class="cta-visual" data-name="Visual">
+              <div class="phone cta-phone" data-name="Celular · Detalle del aviso"><img src="assets/images/app-detail.jpg" alt="Detalle de un aviso con precio, sede de entrega y botón para contactar." data-i18n-attr="alt:appDetailAlt" width="540" height="1199" loading="lazy" data-img="app-detail.jpg" data-wire="placeholder"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" data-lp="LP-08" data-title="Footer" data-name="Footer">
+      <div class="container">
+        <div class="footer-top" data-name="Contenido">
+          <div class="footer-brand" data-name="Marca">
+            <a class="brand brand-light" href="#inicio" aria-label="UPC-X, volver al inicio" data-i18n-attr="aria-label:brandTopLabel" data-name="Logo UPC-X">
+              <span class="brand-mark"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4Z"/></svg></span>
+              <span class="brand-name">UPC-X</span>
+            </a>
+            <p data-i18n="footerTagline">Marketplace entre estudiantes UPC verificados. Un producto de RichStudent.</p>
+          </div>
+          <nav class="footer-cols" aria-label="Pie de página" data-i18n-attr="aria-label:footerNavLabel" data-name="Columnas">
+            <div class="footer-col" data-name="Producto">
+              <h4 data-i18n="footerProduct">Producto</h4>
+              <a href="#como-funciona" data-i18n="navHow">Cómo funciona</a>
+              <a href="#caracteristicas" data-i18n="navFeatures">Características</a>
+              <a href="#testimonios" data-i18n="navTestimonials">Testimonios</a>
+              <a href="#preguntas" data-i18n="navFaq">Preguntas frecuentes</a>
+            </div>
+            <div class="footer-col" data-name="Cuenta">
+              <h4 data-i18n="footerAccount">Cuenta</h4>
+              <a href="https://www.figma.com/proto/QGamFXN1K46XmRBrmCYpq9/UPC-X-Diseno-y-prototipos?node-id=22-7143&amp;starting-point-node-id=22%3A7143&amp;page-id=2%3A5&amp;scaling=scale-down-width" data-cta="signup" data-i18n="signup">Crear cuenta</a>
+              <a href="https://www.figma.com/proto/QGamFXN1K46XmRBrmCYpq9/UPC-X-Diseno-y-prototipos?node-id=22-7725&amp;starting-point-node-id=22%3A7143&amp;page-id=2%3A5&amp;scaling=scale-down-width" data-cta="login" data-i18n="login">Iniciar sesión</a>
+              <a href="https://www.figma.com/proto/QGamFXN1K46XmRBrmCYpq9/UPC-X-Diseno-y-prototipos?node-id=5-325&amp;starting-point-node-id=5%3A325&amp;page-id=0%3A1&amp;scaling=scale-down" data-cta="demo" data-i18n="demo">Probar demo</a>
+              <a href="#contacto" data-i18n="footerContact">Contacto</a>
+            </div>
+            <div class="footer-col" data-name="Legal">
+              <h4 data-i18n="footerLegal">Legal</h4>
+              <a href="terminos.html" data-i18n="footerTerms">Términos y condiciones</a>
+              <a href="terminos.html#privacidad" data-i18n="footerPrivacy">Privacidad</a>
+              <a href="terminos.html#normas" data-i18n="footerRules">Normas de la comunidad</a>
+            </div>
+          </nav>
+        </div>
+        <div class="footer-bottom" data-name="Legal">
+          <p data-i18n="footerCopy">© 2026 RichStudent. UPC-X es un proyecto académico y no es un servicio oficial de la UPC.</p>
+        </div>
+      </div>
     </footer>
+  </div>
 
-    <!-- Bootstrap Bundle JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
