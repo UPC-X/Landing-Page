@@ -2,7 +2,7 @@
 (() => {
   const STORAGE_KEY = 'upcx-lang';
   // Support inbox that receives the contact form (opened with the visitor's email app).
-  const SUPPORT_EMAIL = '';
+  const SUPPORT_EMAIL = 'u201821684@upc.edu.pe';
   const PROTOTYPE = 'https://www.figma.com/proto/QGamFXN1K46XmRBrmCYpq9/UPC-X-Diseno-y-prototipos';
   // Figma prototype frames of the web app: W-01 Acceso and W-01b Iniciar sesión.
   const ctaTargets = {
