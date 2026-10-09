@@ -7,12 +7,12 @@
   // Figma prototype frames of the web app: W-01 Acceso and W-01b Iniciar sesión.
   const ctaTargets = {
     desktop: {
-      signup: `${PROTOTYPE}?node-id=22-7143&starting-point-node-id=22%3A7143&page-id=2%3A5&scaling=scale-down-width`,
-      login: `${PROTOTYPE}?node-id=22-7725&starting-point-node-id=22%3A7143&page-id=2%3A5&scaling=scale-down-width`,
+      signup: 'https://app.upcx.tech/acceso/registro',
+      login: 'https://app.upcx.tech/acceso/iniciar-sesion',
     },
     mobile: {
-      signup: `${PROTOTYPE}?node-id=35-48502&starting-point-node-id=35%3A48502&page-id=2%3A6&scaling=scale-down`,
-      login: `${PROTOTYPE}?node-id=35-48851&starting-point-node-id=35%3A48502&page-id=2%3A6&scaling=scale-down`,
+      signup: 'https://app.upcx.tech/acceso/registro',
+      login: 'https://app.upcx.tech/acceso/iniciar-sesion',
     },
   };
 
