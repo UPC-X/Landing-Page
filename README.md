@@ -13,6 +13,7 @@ Diseño en Figma: [UPC-X · Landing Page](https://www.figma.com/design/tBrjbqysc
 | `css/styles.css` | Tokens de color y tipografía del informe (sección 4.1) y estilos responsive (1100 px y 760 px). |
 | `js/i18n.js` | Textos en inglés y mensajes dinámicos en ambos idiomas. |
 | `js/main.js` | Selector de idioma, menú móvil, destinos de los llamados a la acción y validación del formulario de contacto. |
+| `js/support.js`, `config.json` | Recepción de soporte invitado mediante la API 0.8.0; `apiBase` es el origen HTTPS explícito de la API. |
 | `assets/` | Foto del hero, capturas de la app, imagen social y favicon. |
 
 ## Idioma
@@ -21,7 +22,19 @@ El idioma se elige en este orden: parámetro `?lang=es|en`, la última elección
 
 ## Probar en local
 
-Abre `index.html` en el navegador o sirve la carpeta con cualquier servidor estático, por ejemplo `npx serve .`. Revisa la página a 1440 px y a 390 px de ancho.
+Sirve la carpeta con un servidor estático, por ejemplo `npx serve .`. El formulario necesita HTTP/HTTPS para cargar `./config.json`; abrir el archivo directamente no confirma solicitudes. Revisa la página a 1440 px y a 390 px de ancho.
+
+Para un entorno local aislado, configura `apiBase` como `http://localhost:8080` y permite en CORS el origen del servidor estático. No ejecutes envíos de prueba contra producción. El destino publicado es `https://api.upcx.tech`; debe permitir `https://upc-x.github.io` en CORS, incluidas las cabeceras `X-UPCX-Client` y `Accept-Language`.
+
+El contacto valida correo (hasta 254), asunto (hasta 100) y mensaje (hasta 2000), envía `POST /api/support/guest` con `credentials: omit` y muestra un número solo después del acuse HTTP 201 válido. Ante desconexión o error conserva los campos. Un 429 respeta `Retry-After` y muestra `X-Request-Id` si está disponible. El formulario no envía correos ni presupone su entrega. Los CTA de demo siguen señalando explícitamente al prototipo de Figma.
+
+Validación local sin transmitir datos ni enviar mensajes:
+
+```bash
+node --test tests/support.test.cjs
+node --check js/main.js
+node --check js/support.js
+```
 
 ## Publicar
 
