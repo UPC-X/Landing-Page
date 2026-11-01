@@ -85,7 +85,7 @@ const translations = {
     faq4Q: 'How much does it cost to list?',
     faq4A: 'During the pilot, publishing listings and contacting other students is free.',
     faq5Q: 'What if something goes wrong?',
-    faq5A: 'You can cancel the agreement before the hand-off and report a listing or a conversation. Reviews are only enabled once both sides confirm the hand-off.',
+    faq5A: 'You can cancel the agreement before the hand-off and report a listing from its detail page. For other incidents, contact support. Reviews are only enabled once both sides confirm the hand-off.',
     contactTitle: 'Have another question?',
     contactLead: 'Register a private question. Do not include passwords, OTP codes or sensitive financial details.',
     contactSubject: 'Subject',
