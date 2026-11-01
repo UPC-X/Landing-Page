@@ -1,8 +1,6 @@
 // UPC-X landing behaviour: language (es-419 / en), mobile menu, CTA targets and contact form.
 (() => {
   const STORAGE_KEY = 'upcx-lang';
-  // Support inbox that receives the contact form (opened with the visitor's email app).
-  const SUPPORT_EMAIL = 'u201821684@upc.edu.pe';
   const PROTOTYPE = 'https://www.figma.com/proto/QGamFXN1K46XmRBrmCYpq9/UPC-X-Diseno-y-prototipos';
   // Figma prototype frames of the web app: W-01 Acceso and W-01b Iniciar sesión.
   const ctaTargets = {
@@ -183,9 +181,13 @@
       return;
     }
     const email = form.elements.email;
+    const subject = form.elements.subject;
     const message = form.elements.message;
     const status = form.querySelector('.form-status');
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const button = form.querySelector('button[type="submit"]');
+    let submitting = false;
+    let retryAt = 0;
 
     const showError = (field, text) => {
       const error = document.getElementById(`${field.id}-error`);
@@ -194,32 +196,55 @@
       error.hidden = !text;
     };
 
-    form.addEventListener('submit', (event) => {
+    form.addEventListener('submit', async (event) => {
       event.preventDefault();
+      if (submitting || Date.now() < retryAt) return;
       const text = messages[currentLanguage];
       const emailValue = email.value.trim();
       const messageValue = message.value.trim();
+      const subjectValue = subject.value.trim();
       let emailError = '';
       if (!emailValue) {
         emailError = text.errEmailEmpty;
-      } else if (!emailPattern.test(emailValue)) {
+      } else if (!emailPattern.test(emailValue) || emailValue.length > 254) {
         emailError = text.errEmailInvalid;
       }
-      const messageError = messageValue ? '' : text.errMessageEmpty;
+      const subjectError = !subjectValue || subjectValue.length > 100 || /[\r\n\x00-\x1f\x7f]/.test(subjectValue) ? text.errSubject : '';
+      const messageError = !messageValue || messageValue.length > 2000 ? text.errMessageEmpty : '';
       showError(email, emailError);
+      showError(subject, subjectError);
       showError(message, messageError);
       status.hidden = false;
-      if (emailError || messageError) {
+      if (emailError || subjectError || messageError) {
         status.textContent = text.formMissing;
         status.classList.add('is-error');
-        (emailError ? email : message).focus();
+        (emailError ? email : subjectError ? subject : message).focus();
         return;
       }
       status.classList.remove('is-error');
-      status.textContent = text.formSent;
-      const body = `${messageValue}\n\n${text.mailFrom}: ${emailValue}`;
-      const params = `subject=${encodeURIComponent(text.mailSubject)}&body=${encodeURIComponent(body)}`;
-      window.location.href = `mailto:${SUPPORT_EMAIL}?${params}`;
+      status.textContent = text.formSending;
+      submitting = true;
+      button.disabled = true;
+      email.disabled = subject.disabled = message.disabled = true;
+      try {
+        const receipt = await window.UPCXSupport.submit({ email: emailValue, subject: subjectValue, body: messageValue }, currentLanguage);
+        status.textContent = messages[currentLanguage].formSent.replace('{id}', receipt.id);
+        form.reset();
+      } catch (error) {
+        const current = messages[currentLanguage];
+        status.classList.add('is-error');
+        status.textContent = current.formFailed;
+        if (error.retryAfter) {
+          retryAt = Date.now() + error.retryAfter * 1000;
+          status.textContent += ' ' + current.formRetry.replace('{seconds}', error.retryAfter);
+          setTimeout(() => { if (!submitting) button.disabled = false; }, error.retryAfter * 1000);
+        }
+        if (error.requestId) status.textContent += ' ' + current.requestId + ': ' + error.requestId;
+      } finally {
+        submitting = false;
+        email.disabled = subject.disabled = message.disabled = false;
+        button.disabled = Date.now() < retryAt;
+      }
     });
   };
 

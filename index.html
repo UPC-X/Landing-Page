@@ -261,16 +261,21 @@
           </div>
           <div class="contact-card" id="contacto" data-name="Contacto">
             <h3 data-i18n="contactTitle">¿Tienes otra consulta?</h3>
-            <p data-i18n="contactLead">Escríbenos y el equipo de RichStudent te responderá a tu correo.</p>
+            <p data-i18n="contactLead">Registra una consulta privada. No incluyas contraseñas, códigos OTP ni datos financieros sensibles.</p>
             <form class="contact-form" novalidate data-name="Formulario">
               <div class="field" data-name="field · Correo">
                 <label for="contact-email" data-i18n="contactEmail">Correo electrónico</label>
-                <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="u202600001@upc.edu.pe" aria-describedby="contact-email-error">
+                <input id="contact-email" name="email" type="email" maxlength="254" autocomplete="email" placeholder="nombre@ejemplo.com" aria-describedby="contact-email-error">
                 <p class="field-error" id="contact-email-error" hidden></p>
+              </div>
+              <div class="field">
+                <label for="contact-subject" data-i18n="contactSubject">Asunto</label>
+                <input id="contact-subject" name="subject" type="text" maxlength="100" aria-describedby="contact-subject-error">
+                <p class="field-error" id="contact-subject-error" hidden></p>
               </div>
               <div class="field" data-name="field · Mensaje">
                 <label for="contact-message" data-i18n="contactMessage">Mensaje</label>
-                <textarea id="contact-message" name="message" rows="4" placeholder="Cuéntanos tu duda" data-i18n-attr="placeholder:contactMessagePlaceholder" aria-describedby="contact-message-error"></textarea>
+                <textarea id="contact-message" name="message" rows="4" maxlength="2000" placeholder="Cuéntanos tu duda" data-i18n-attr="placeholder:contactMessagePlaceholder" aria-describedby="contact-message-error"></textarea>
                 <p class="field-error" id="contact-message-error" hidden></p>
               </div>
               <button type="submit" class="btn btn-primary btn-block" data-name="btn primary · Enviar consulta"><span data-i18n="contactSubmit">Enviar consulta</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m22 2-7 20-4-9L2 9Zm0 0L11 13"/></svg></button>
@@ -341,6 +346,7 @@
   </div>
 
   <script src="js/i18n.js"></script>
-  <script src="js/main.js?v=2"></script>
+  <script src="js/support.js"></script>
+  <script src="js/main.js?v=3"></script>
 </body>
 </html>
