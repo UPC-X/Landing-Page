@@ -8,7 +8,7 @@ Diseño en Figma: [UPC-X · Landing Page](https://www.figma.com/design/tBrjbqysc
 
 | Ruta | Contenido |
 |---|---|
-| `index.html` | Landing en español (es-419): inicio, problema, características, cómo funciona, testimonios, preguntas frecuentes y contacto, llamado a la acción y footer. |
+| `index.html` | Landing en español (es-419): inicio, problema, características, cómo funciona, ejemplos de uso, preguntas frecuentes y contacto, llamado a la acción y footer. |
 | `terminos.html` | Términos y condiciones, política de privacidad y normas de la comunidad, en español e inglés. |
 | `css/styles.css` | Tokens de color y tipografía del informe (sección 4.1) y estilos responsive (1100 px y 760 px). |
 | `js/i18n.js` | Textos en inglés y mensajes dinámicos en ambos idiomas. |
