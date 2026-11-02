@@ -1051,6 +1051,15 @@ textarea {
   margin-top: 6px;
 }
 
+.terms section p + p {
+  margin-top: 12px;
+}
+
+.terms section p a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
 .terms-list {
   display: flex;
   flex-direction: column;
