@@ -186,6 +186,7 @@
     const status = form.querySelector('.form-status');
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const button = form.querySelector('button[type="submit"]');
+    form.addEventListener('focusin', () => { void window.UPCXSupport.warm().catch(() => {}); });
     let submitting = false;
     let retryAt = 0;
 
@@ -226,6 +227,9 @@
       submitting = true;
       button.disabled = true;
       email.disabled = subject.disabled = message.disabled = true;
+      const wakingNotice = setTimeout(() => {
+        if (submitting) status.textContent = messages[currentLanguage].formWaking;
+      }, 4000);
       try {
         const receipt = await window.UPCXSupport.submit({ email: emailValue, subject: subjectValue, body: messageValue }, currentLanguage);
         status.textContent = messages[currentLanguage].formSent.replace('{id}', receipt.id);
@@ -241,6 +245,7 @@
         }
         if (error.requestId) status.textContent += ' ' + current.requestId + ': ' + error.requestId;
       } finally {
+        clearTimeout(wakingNotice);
         submitting = false;
         email.disabled = subject.disabled = message.disabled = false;
         button.disabled = Date.now() < retryAt;
