@@ -41,3 +41,10 @@ node --check js/support.js
 1. Integra los cambios en `main` mediante un Pull Request.
 2. GitHub Pages publica `main` desde la raíz (`/`).
 3. Comprueba el resultado en <https://upc-x.github.io/Landing-Page/>.
+
+
+## Esperas y recursos
+
+Al enfocar el formulario se precalienta `/actuator/health/liveness`. Al enviar, la sonda espera el despertar hasta 150 segundos y se muestra un aviso progresivo a los cuatro segundos; después se hace un único POST con límite de 30 segundos. Un resultado ambiguo conserva los campos y no vuelve a transmitirlos automáticamente. Ni la sonda ni la configuración envían cookies o datos del formulario.
+
+Inter y Plus Jakarta Sans se sirven desde `assets/fonts` con sus licencias y `font-display: swap`; se precargan las dos fuentes principales. La imagen del hero tiene prioridad alta y las imágenes secundarias se decodifican de forma asíncrona. El hero ofrece variantes AVIF/WebP de 800 y 1600 px; app-home, de 270 y 540 px. `<picture>` y `srcset` eligen la variante, y el hero AVIF tiene preload adaptable. Los JPEG originales se conservan como respaldo. `python scripts/optimize_images.py` regenera las variantes con Pillow y comprueba los encoders disponibles. Se verificó la composición en navegador a 1440 y 390 px, sin desbordamiento ni recursos externos de fuentes; en ambos casos se descargó una sola variante de hero (800 px, 57 125 bytes frente a los 252 022 del JPEG) y app-home de 270 px (10 361 bytes frente a 65 175). Estos cambios están en `feature/efficiency`, sin publicar GitHub Pages.

@@ -28,9 +28,10 @@
   <meta name="twitter:image" content="https://upc-x.github.io/Landing-Page/assets/images/og-image.jpg">
   <meta name="twitter:image:alt" content="Portada de UPC-X: estudiantes UPC intercambiando útiles y la aplicación en un celular.">
   <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="preload" as="image" type="image/avif" imagesrcset="assets/images/hero-image-800.avif 800w, assets/images/hero-image-1600.avif 1600w" imagesizes="(max-width: 760px) 100vw, 55vw" fetchpriority="high">
+  <link rel="preload" href="assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/plus-jakarta-sans-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -81,9 +82,17 @@
             <p class="hero-campus" data-name="Sedes"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0ZM15 10a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></svg><span data-i18n="heroCampus">Monterrico · San Miguel · San Isidro · Villa</span></p>
           </div>
           <div class="hero-visual" data-name="Visual del hero">
-            <img class="hero-photo" src="assets/images/hero-image.jpg" alt="Estudiantes UPC intercambian una calculadora y apuntes en una mesa del campus." data-i18n-attr="alt:heroPhotoAlt" width="1600" height="873" data-img="hero-image.jpg" data-wire="placeholder">
+            <picture>
+              <source type="image/avif" srcset="assets/images/hero-image-800.avif 800w, assets/images/hero-image-1600.avif 1600w" sizes="(max-width: 760px) 100vw, 55vw">
+              <source type="image/webp" srcset="assets/images/hero-image-800.webp 800w, assets/images/hero-image-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 55vw">
+              <img class="hero-photo" fetchpriority="high" decoding="async" src="assets/images/hero-image.jpg" alt="Estudiantes UPC intercambian una calculadora y apuntes en una mesa del campus." data-i18n-attr="alt:heroPhotoAlt" width="1600" height="873" data-img="hero-image.jpg" data-wire="placeholder">
+            </picture>
             <div class="phone hero-phone" data-name="Celular · Inicio">
-              <img src="assets/images/app-home.jpg" alt="Pantalla de inicio de la app UPC-X con buscador, filtros y avisos recientes." data-i18n-attr="alt:appHomeAlt" width="540" height="1199" data-img="app-home.jpg" data-wire="placeholder">
+              <picture>
+                <source type="image/avif" srcset="assets/images/app-home-270.avif 270w, assets/images/app-home-540.avif 540w" sizes="(max-width: 760px) 180px, 240px">
+                <source type="image/webp" srcset="assets/images/app-home-270.webp 270w, assets/images/app-home-540.webp 540w" sizes="(max-width: 760px) 180px, 240px">
+                <img decoding="async" src="assets/images/app-home.jpg" alt="Pantalla de inicio de la app UPC-X con buscador, filtros y avisos recientes." data-i18n-attr="alt:appHomeAlt" width="540" height="1199" data-img="app-home.jpg" data-wire="placeholder">
+              </picture>
             </div>
             <p class="hero-chip" data-name="badge · Correo UPC verificado"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 8 4v6c0 5-8 10-8 10S4 17 4 12V6Zm-4 10 3 3 5-6"/></svg><span data-i18n="verifiedChip">Correo UPC verificado</span></p>
           </div>
@@ -174,7 +183,7 @@
                 <p data-i18n="step1Text">Ingresa tu correo @upc.edu.pe y escribe el código de seis dígitos que te enviamos.</p>
               </div>
               <div class="step-shot" data-name="Captura">
-                <div class="phone" data-name="Celular · Verificación"><img src="assets/images/app-verification.jpg" alt="Pantalla de verificación con el código de seis dígitos." data-i18n-attr="alt:appVerifyAlt" width="540" height="1199" loading="lazy" data-img="app-verification.jpg" data-wire="placeholder"></div>
+                <div class="phone" data-name="Celular · Verificación"><img src="assets/images/app-verification.jpg" alt="Pantalla de verificación con el código de seis dígitos." data-i18n-attr="alt:appVerifyAlt" width="540" height="1199" loading="lazy" decoding="async" data-img="app-verification.jpg" data-wire="placeholder"></div>
               </div>
             </li>
             <li class="step" data-name="Paso 2 · Publica o explora">
@@ -184,7 +193,7 @@
                 <p data-i18n="step2Text">Busca lo que necesitas por sede y categoría, o publica lo que ya no usas con fotos y precio.</p>
               </div>
               <div class="step-shot" data-name="Captura">
-                <div class="phone" data-name="Celular · Publicar"><img src="assets/images/app-publish.jpg" alt="Formulario para publicar un aviso con tipo, título, precio y categoría." data-i18n-attr="alt:appPublishAlt" width="540" height="1199" loading="lazy" data-img="app-publish.jpg" data-wire="placeholder"></div>
+                <div class="phone" data-name="Celular · Publicar"><img src="assets/images/app-publish.jpg" alt="Formulario para publicar un aviso con tipo, título, precio y categoría." data-i18n-attr="alt:appPublishAlt" width="540" height="1199" loading="lazy" decoding="async" data-img="app-publish.jpg" data-wire="placeholder"></div>
               </div>
             </li>
             <li class="step" data-name="Paso 3 · Acuerda">
@@ -194,7 +203,7 @@
                 <p data-i18n="step3Text">Escribe desde el aviso, acuerden punto y hora en el campus y confirmen la entrega.</p>
               </div>
               <div class="step-shot" data-name="Captura">
-                <div class="phone" data-name="Celular · Chat"><img src="assets/images/app-chat.jpg" alt="Conversación sobre una calculadora con la propuesta de encuentro." data-i18n-attr="alt:appChatAlt" width="540" height="1199" loading="lazy" data-img="app-chat.jpg" data-wire="placeholder"></div>
+                <div class="phone" data-name="Celular · Chat"><img src="assets/images/app-chat.jpg" alt="Conversación sobre una calculadora con la propuesta de encuentro." data-i18n-attr="alt:appChatAlt" width="540" height="1199" loading="lazy" decoding="async" data-img="app-chat.jpg" data-wire="placeholder"></div>
               </div>
             </li>
           </ol>
@@ -295,7 +304,7 @@
               </div>
             </div>
             <div class="cta-visual" data-name="Visual">
-              <div class="phone cta-phone" data-name="Celular · Detalle del aviso"><img src="assets/images/app-detail.jpg" alt="Detalle de un aviso con precio, sede de entrega y botón para contactar." data-i18n-attr="alt:appDetailAlt" width="540" height="1199" loading="lazy" data-img="app-detail.jpg" data-wire="placeholder"></div>
+              <div class="phone cta-phone" data-name="Celular · Detalle del aviso"><img src="assets/images/app-detail.jpg" alt="Detalle de un aviso con precio, sede de entrega y botón para contactar." data-i18n-attr="alt:appDetailAlt" width="540" height="1199" loading="lazy" decoding="async" data-img="app-detail.jpg" data-wire="placeholder"></div>
             </div>
           </div>
         </div>
