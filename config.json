@@ -1,1 +1,1 @@
-{ "apiBase": "https://api.upcx.tech" }
+{ "apiBase": "https://api.upcx.tech", "posthogKey": "", "posthogHost": "https://us.i.posthog.com" }
